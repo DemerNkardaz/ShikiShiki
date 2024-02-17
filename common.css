@@ -16,6 +16,7 @@
       --text_options: #ededed;
     
       --background_light_main: #FFFFFFB3;
+      --background_light_second: #FFFFFFDF;
       --background_light_person_block: #FFFFFF80;
       --button_light: #ffffff48;
       --white_border: #ffffff20;
@@ -106,7 +107,7 @@
   margin-bottom: 10px;
 }
 header > .notice {visibility: visible; font-family: var(--font-main)}
-div.profile-content::before {content:url('https://i.imgur.com/xU10ZwU.png');}
+div.profile-content::before {content:url('https://i.imgur.com/xU10ZwU.png'); margin-top: 25px;}
 
 .b-stats_bar.anime .bar .first {background: #91ffa0}
 .b-stats_bar.anime .bar .second {background: #91daff}
@@ -306,7 +307,7 @@ div.b-feedback {
 .p-profiles-show .profile-head:before {
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 0;
   content: '';
   display: flex;
   height: 300px;
@@ -330,4 +331,32 @@ div.b-feedback {
 .profile-head .c-info {
   margin: 0;
   width: 256px;
+}
+
+.l-page {
+  position: relative;
+  background: none;
+  background-color: var(--background_light_main);
+  box-shadow: 0 3px 5px var(--shadow_inset_info);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+.l-page::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: saturate(0%);
+  border-radius: 15px;
+  opacity: 0.3;
+}
+
+body {
+  position: relative;
+  background: url('/devtemplate/FQDVjuV.jpeg') no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center;
+
 }
