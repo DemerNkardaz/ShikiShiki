@@ -171,3 +171,17 @@ body { background: url(/assets/background/square_bg.png) repeat; background-colo
 @import url(https://raw.githubusercontent.com/kaurkaur/Shikimori/master/CSS/HistoryDates.css);
 
 div.profile-content::before {content:url('https://i.imgur.com/esBwZwu.png');}
+
+*/
+
+article a,
+article a picture,
+article a span {
+  height: 187px;
+}
+
+article picture img,
+article picture {
+  height: 100%;
+  object-fit: cover;
+}
