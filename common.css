@@ -1,3 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Noto+Color+Emoji&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --white: #fff;
+    
+      --shadow_primary: #22222210;
+      --shadow_secondary: #22222286;
+      --shadow_half: #22222264;
+      --shadow_inset_info: #22222229;
+    
+      --text_primary: #333;
+      --text_lightgrey: #d5d5d5;
+      --text_light: #eee;
+      --text_very_light: #fefefefe;
+      --text_mid_grey: #A4A4A4;
+    
+      --text_options: #ededed;
+    
+      --background_light_main: #FFFFFFB3;
+      --background_light_person_block: #FFFFFF80;
+      --button_light: #ffffff48;
+      --white_border: #ffffff20;
+      --light_border: #ebedf0;
+      --grey_border: #b3b3b3;
+      --border_grey_entity: 1px solid var(--grey_border);
+    
+      --banner_gradient: linear-gradient(45deg, #c29819, #f0b607);
+      --avatar_background_gradient: linear-gradient(193deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 24%, rgba(255, 255, 255, 1) 69%, rgba(238, 238, 238, 1) 90%, rgba(254, 254, 254, 1) 100%);
+    
+      --color_dark_gold: #E1AA4B;
+      --color_orange_gold: #E08A1E;
+      --color_gold_hover: #FEDB1D;
+      --color_gold_hover_pre_light: #FFE727;
+      --color_gold_hover_light: #FFF527;
+      --color_pale_gold_semi_light: #ffd228;
+      --color_pale_gold: #E2B13C;
+      --color_dirty_gold: #C29819;
+      --color_gold_selected: #EBC824;
+      --color_gold_light: #ffed9a;
+    
+      --kamon_red: #dc4032;
+      --kamon_red_shadow_dark: #70231c9a;
+      --kamon_red_shadow_light: #ffada5;
+    
+      --water_element_gradient: linear-gradient(to top, #4575b5, #7db9e8, #b6e2ff);
+      --metal_element_gradient: linear-gradient(to top, #9b9b9b, #e4e4e4, #e8e8e8);
+
+      --font-var: var(--font-main), 'Noto Sans JP', 'Noto Sans KR', 'Noto Color Emoji', sans-serif;
+      --font-varP: 'Philosopher', 'Noto Sans JP', 'Noto Sans KR', 'Noto Color Emoji', sans-serif;
+      --font-varC: 'Cormorant SC', 'Noto Sans JP', 'Noto Sans KR', 'Noto Color Emoji', sans-serif;
+  }
+
+
 .entry-163083 .name-ru {display: none;}
 .entry-163083 .title.two_lined::after {content: 'Вэй Усянь';}
 .entry-163084 .name-ru {display: none;}
@@ -22,10 +74,37 @@
 .b-catalog_entry .cover .image-cutter img {border-radius: 7px; border: 1px solid #212121}
 .b-catalog_entry .cover .image-cutter img:hover {border-radius: 7px; border: 1px solid #69bbfa}
 
-.p-profiles .profile-head .c-brief header h1 {font-family: 'Batang'; font-size: 25pt}
-.p-profiles .profile-head .c-brief header h1::before {content: 'Никарэтасу Домитори — Дзёнин деревни, скрытой деревьями ㊍'; font-family: var(--font-main); font-size: 10pt; display:block; margin-top:5px}
-.p-profiles .profile-head .c-brief header h1::after {content: '🟢「Акацки вацыдота: Конан, Итачи, Кисамэ, Сасори, Дэйдара, Какузу, Хидан, Орочимару, со штэ Дзэтцу」 '; display:block; font-family: var(--font-main); font-size: 10pt}
-
+.p-profiles .profile-head .c-brief header h1 {
+  font-family: var(--font-varC) !important;
+  font-size: 25pt;
+  word-wrap: break-word !important;
+  word-break: keep-all !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}
+.p-profiles .profile-head .c-brief header h1::before {
+  content: 'Никарэтасу Домитори — Дзёнин деревни, скрытой деревьями ㊍';
+  font-family: var(--font-var) !important;
+  font-size: 10pt !important;
+  display: block !important;
+  margin-top:5px;
+  word-wrap: break-word !important;
+  word-break: keep-all !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}
+.p-profiles .profile-head .c-brief header h1::after {
+  content: '🟢「Акацки вацыдота: Конан, Итачи, Кисамэ, Сасори, Дэйдара, Ка­кузу, Хидан, Орочимару, со штэ Дзэтцу」';
+  width: auto;
+  font-family: var(--font-var) !important;
+  font-size: 10.5pt !important;
+  display: block !important;
+  word-wrap: break-word !important;
+  word-break: keep-all !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  margin-bottom: 10px;
+}
 header > .notice {visibility: visible; font-family: var(--font-main)}
 div.profile-content::before {content:url('https://i.imgur.com/xU10ZwU.png');}
 
@@ -65,25 +144,21 @@ div.profile-content::before {content:url('https://i.imgur.com/xU10ZwU.png');}
 
 img[title="Демер Нкардаз"] {
   border-radius: 20px;
-  border: 4px solid transparent; padding: 5px;
-  background: linear-gradient(darkblue, darkorchid);
-  background-clip: padding-box;
+  border: 4px solid transparent;
+  box-shadow: 0 0 0 1px var(--shadow_inset_info);
 }
 
 
 
-.profile-head .avatar::after{content:'Контентодел ㊋㊌㊍㊎㊏';}
-
-.p-profiles-show .profile-head:before {
-  content: '';
-  display: block;
-  height: 300px;
-  background: url("https://i.imgur.com/Lh1C2F0.jpg") no-repeat;
-  background-size: cover; 
-  margin: -15px;
-  margin-bottom: 5px;
-  background-position: center;
+.profile-head .avatar::after {
+  content: 'Контентодел ㊋㊌㊍㊎㊏';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
 }
+
+
 .l-footer:after {
   content: '';
   display: block;
@@ -159,6 +234,29 @@ body { background: url(/assets/background/square_bg.png) repeat; background-colo
 
   .p-profiles-show .profile-content .cc-2 > .c-right > .block:last-child {
     clear: both;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--background_light_main);
+    box-shadow: 0 3px 5px var(--shadow_inset_info);
+    padding: 15px;
+  }
+  .p-profiles-show .profile-content .cc-2>.c-right>.block:last-child>#cutted_covers_1 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 0px;
+    column-gap: 10px;
+  }
+  .p-profiles-show .profile-content .cc-2>.c-right>.block:last-child article {
+    width: auto;
+    height: auto;
+  }
+
+  .about.block {
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--background_light_main);
+    box-shadow: 0 3px 5px var(--shadow_inset_info);
+    padding: 15px;
   }
 }
 
@@ -174,14 +272,62 @@ div.profile-content::before {content:url('https://i.imgur.com/esBwZwu.png');}
 
 */
 
-article a,
-article a picture,
-article a span {
-  height: 187px;
-}
 
 article picture img,
 article picture {
   height: 100%;
   object-fit: cover;
+}
+
+
+div.b-feedback {
+  display: none !important;
+}
+
+
+.l-top_menu-v2 {
+  margin-bottom: 25px;
+}
+
+.p-profiles-show .profile-head {
+  position: relative;
+  background: var(--background_light_main);
+  box-shadow: 0 3px 5px var(--shadow_inset_info);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.p-profiles-show .profile-head:before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  content: '';
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background: url("https://i.imgur.com/Lh1C2F0.jpg") no-repeat;
+  background-size: cover;
+  margin-bottom: 5px;
+  background-position: center;
+}
+
+.profile-head .c-brief {
+  padding: 0 15px 0 15px;
+  width: 650px;
+  margin-bottom: 20px !important;
+}
+
+.profile-head .c-history.x3 {
+  margin: 0;
+  width: 256px;
+}
+.profile-head .c-info {
+  margin: 0;
+  width: 256px;
 }
