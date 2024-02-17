@@ -334,12 +334,12 @@ div.b-feedback {
 }
 
 .l-page {
-  position: relative;
-  background: none;
-  background-color: var(--background_light_main);
-  box-shadow: 0 3px 5px var(--shadow_inset_info);
-  border-radius: 15px;
-  backdrop-filter: blur(5px);
+  position: relative !important;
+  background: none !important;
+  background-color: var(--background_light_main) !important;
+  box-shadow: 0 3px 5px var(--shadow_inset_info) !important;
+  border-radius: 15px !important;
+  backdrop-filter: blur(5px) !important;
 }
 .l-page::before {
   position: absolute;
@@ -354,8 +354,8 @@ div.b-feedback {
 }
 
 body {
-  position: relative;
+  position: relative !important;
   background: url('/devtemplate/FQDVjuV.jpeg') no-repeat !important;
   background-attachment: fixed !important;
-  background-position: center;
+  background-position: center !important;
 }
